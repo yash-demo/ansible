@@ -26,3 +26,7 @@
             targetPort: 8000
             name: port-8000-tcp
             port: 8000
+            
+  - name: Run copy-jar role to copy jar files to artifactory
+    include_role:
+       name:  copy-jar
