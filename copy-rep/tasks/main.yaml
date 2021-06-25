@@ -1,4 +1,6 @@
-- name: Copy hello-microservice jar file to artifactory
-  copy:
-    src:  ./build/libs/microservice1-0.0.1-SNAPSHOT.jar
-    dest: "{{ jar_path }}"
+- hosts: webserver
+  tasks:
+      - name: Clone repo
+        git:
+            repo: git@github.com/yash-demo/project.git
+            dest: .
