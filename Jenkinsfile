@@ -20,7 +20,7 @@ pipeline {
          }
           steps{
                 sh 'ansible-galaxy collection install community.kubernetes'
-                sh 'ansible-playbook demo.yaml'
+                sh 'ansible-playbook demo.yml'
               
           }    
       } 
