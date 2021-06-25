@@ -27,6 +27,6 @@
             name: port-8000-tcp
             port: 8000
             
-  - name: Run copy-jar role to copy jar files to artifactory
+  - name: Run copy-rep role to clone repo
     include_role:
-       name:  copy-jar
+       name:  copy-rep
