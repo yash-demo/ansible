@@ -27,6 +27,3 @@
             name: port-8000-tcp
             port: 8000
             
-  - name: Run copy-rep role to clone repo
-    include_role:
-       name:  copy-rep
